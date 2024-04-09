@@ -27,7 +27,7 @@ export const handler = async(event) => {
   catch (error) {
     // error handling.
     console.log(error)
-    return error.Message
+    return ses.send(500)
   }
   finally {
     // finally.
