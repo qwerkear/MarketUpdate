@@ -4,7 +4,7 @@
 const { SESClient, SendEmailCommand } = require( "@aws-sdk/client-ses");
 const ses = new SESClient({ region: "us-east-1" });
 
-export const handler = async(event) => {
+exports.handler = async(event) => {
   const command = new SendEmailCommand({
     Destination: {
       ToAddresses: ["qwer.kear@gmail.com"],
