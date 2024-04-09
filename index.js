@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
-const { SESClient, SendEmailCommand } = require( "@aws-sdk/client-ses");
 const ses = new SESClient({ region: "us-east-1" });
 
 export const handler = async(event) => {
