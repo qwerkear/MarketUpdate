@@ -19,7 +19,7 @@ export const handler = async(event) => {
         Text: { Data: thisMonthsCPI },
       },
 
-      Subject: { Data: "Test Email" },
+      Subject: { Data: "CPI Email" },
     },
     Source: "qwer.kear@gmail.com",
   });
